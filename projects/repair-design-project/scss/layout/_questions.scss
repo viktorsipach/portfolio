@@ -1,0 +1,234 @@
+.questions {
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #FFFFFF 50%, rgba(0,0,0,0.9) 50% );
+
+    @media (max-width: 760px) {
+        width: 100%;
+        height: 6%;
+    }
+}
+
+.form-questions {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+
+    &__text {
+        width: 65%;
+        margin-top: 5%;
+        margin-bottom: 4%;
+        align-self: center;
+        font-family: Yeseva One, serif;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media (max-width: 760px) {
+            margin-top: 0;
+        }
+
+    }
+
+    @media (max-width: 1260px) {
+        width: 70%;
+       
+    }
+
+    @media (max-width: 760px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #131313;
+    }
+}
+
+.wrapper-name-phone {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: space-around;
+
+    @media (max-width: 760px) {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+
+.form-questions-name {
+    width: 30%;
+  
+
+    &__name {
+        font-family: FuturaBookC;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__text {
+        font-family: FuturaMediumC, serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    @media (max-width: 760px) {
+        width: 92%;
+        height: 45%;
+        align-self: center;
+       
+    }
+}
+
+.form-questions-phone {
+    width: 30%;
+   
+
+    &__name {
+        font-family: FuturaBookC;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__text {
+        font-family: FuturaMediumC, serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    @media (max-width: 760px) {
+        width: 92%;
+        height: 45%;
+        align-self: center;
+       
+    }
+}
+
+.form-questions-question {
+    width: 80%;
+    margin-bottom: 4%;
+    align-self: center;
+   
+
+    &__name {
+        font-family: FuturaBookC;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__text {
+        font-family: FuturaMediumC, serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    @media (max-width: 760px) {
+        width: 92%;
+        height: 20%;
+        align-self: center;
+       
+    }
+}
+
+.form-questions-checkbox {
+    width: 53%;
+    margin-bottom: 4%;
+    margin-left: 18%;
+    display: flex;
+    align-self: center;
+    font-family: FuturaBookC, serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+     
+    &__input {
+       display: none 
+    }
+    
+    &__label {
+        width: 76%;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(126, 125, 123, 0.3);
+        }
+    }
+  
+    &__input:checked + &__label::before {
+        content: "\2713"; 
+        margin-right: 2%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+        background-color: #E3B873;
+        font-size: 1.5rem; 
+        line-height: 1.5rem;    
+        color: #FFFFFF;  
+        text-align: center;  
+       
+    }
+
+    @media (max-width: 760px) {
+        width: 100%;
+        height: 3%;
+
+    }
+   
+}
+
+.form-questions-submit {
+    width: 20%;
+    height: 9%;
+    align-self: center;
+    font-family: FuturaDemiC, serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 1.5rem rgba(227, 184, 115, 0.15);
+    border: 0;
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(227, 184, 115, 0.8);
+      }
+
+    @media (max-width: 760px) {
+        width: 92%;
+        height: 8%;
+        margin-top: 10%;
+
+    }
+
+}

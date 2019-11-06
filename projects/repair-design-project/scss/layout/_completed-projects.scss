@@ -1,0 +1,237 @@
+.completed-projects {
+    position: relative;
+    width: 100%;
+    height: 8%;
+    overflow: hidden;
+    background-color: #131313;
+
+
+    &__img {
+      position: absolute;
+      top: 27%;
+      left: 42.5%;
+
+      @media (max-width: 760px) {
+        display: none;
+    }
+    }
+
+    &__img_over {
+      top: 27%;
+      position: absolute;
+      left: 91%;
+
+      @media (max-width: 760px) {
+       width: 92%;
+       position: absolute;
+       top: 32%;
+       left: 4%;
+    }
+    }
+
+    &__button_left {
+      display: none;
+
+      @media (max-width: 760px) {
+        width: 9%;
+        display: inline-block;
+        position: absolute;
+        left: 8%;
+        top: 46%;
+    }
+    }
+
+    &__button_right {
+      width: 4%;
+      position: absolute;
+      top: 52%;
+      right: 2.5%;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      @media (max-width: 760px) {
+        width: 9%;
+        position: absolute;
+        right: 8%;
+        top: 46%;
+    }
+    }
+
+    @media (max-width: 760px) {
+        width: 100%;
+        height: 8%;
+        position: relative;
+    }
+}
+
+.menu-projects {
+    position: absolute;
+    left: 40%;
+    top: 9%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    &__link_active {
+        font-family: Yeseva One, serif;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        text-transform: uppercase;
+        color: #E3B873;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.3);
+          text-decoration: none;
+        }
+    }
+
+    &__link {
+      font-family: Yeseva One, serif;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.3);
+
+      &:hover {
+        color: #E3B873;
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: 760px) {
+        display: none;
+    }
+}
+
+.projects-info {
+    width: 30%;
+    height: 35%;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1260px) {
+      top: 8%;
+    }
+}
+
+.main-info {
+    width: 100%;
+    height: 65%;
+    position: relative;
+
+    &__header {
+      width: 40%;
+      font-family: Yeseva One, serif;
+      font-size: 2.7rem;
+      line-height: 3.7rem;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+      color: #E3B873;
+
+      @media (max-width: 760px) {
+        position: absolute;
+        bottom: 96%;
+        left: 90%;
+        font-size: 2.2rem;
+        line-height: 138.6%;
+        text-align: center;
+
+        &_span {
+          position: absolute;
+          left: 25%;
+        }
+    }
+    }
+
+    &__vector {
+        position: absolute;
+        right: 42%;
+        top: 34%;
+
+        @media (max-width: 1260px) {
+          display: none;
+        }
+      
+
+        @media (max-width: 760px) {
+            display: none;
+        }
+    }
+
+    &__text {
+      margin-top: 6%;
+      font-family: FuturaBookC, serif;
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      color: #FFFFFF;
+     
+      @media (max-width: 760px) {
+        width: 279%;
+        position: absolute;
+        bottom: 13%;
+        font-size: 1.4rem;
+        line-height: 158.48%;
+        text-align: center;
+    }
+    }
+}
+
+.info {
+    width: 100%;
+    margin-top: 23%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 28%;
+
+    @media (max-width: 1260px) {
+      margin-top: 80%;
+    }
+  
+
+    &__header {
+        font-family: Yeseva One, serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: #E3B873;
+
+        @media (max-width: 760px) {
+          font-size: 1.4rem;
+          line-height: 138.6%;
+      }
+        }
+
+    &__text {
+       font-family: FuturaBookC;
+       font-size: 1.5rem;
+       line-height: 2rem;
+       color: #FFFFFF;
+
+       @media (max-width: 760px) {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    }
+
+    @media (max-width: 760px) {
+      width: 279%;
+      position: absolute;
+      left: -10%;
+      bottom: -127%;
+      display: grid;
+      -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+      grid-row-gap: 30%;
+      grid-column-gap: 10%;
+      font-size: 1.4rem;
+      line-height: 158.48%;
+  }
+}
+

@@ -1,0 +1,166 @@
+.organization-work {
+    width: 100%;
+    height: 7%;
+    position: relative;
+    display: flex;
+    background-color: #131313;
+
+    &__img {
+        width: max-content;
+        height: max-content;
+        align-self: flex-end;
+
+        @media (max-width: 1260px) {
+            width: 50%;
+            height: 40%;
+         }
+    }
+
+
+
+    @media (max-width: 760px) {
+       display: none;
+    }
+}
+
+.steps {
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        left: 53%;
+        top: 10%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+
+        &__header_active {
+            font-family: Yeseva One, serif;
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: underline #E3B873;
+        }
+
+        &__text_active {
+            font-family: FuturaBookC;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            color: #FFFFFF;
+        }
+
+        &__header {
+            font-family: Yeseva One;
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: underline;
+            opacity: 0.4;
+        }
+
+        &__text {
+            font-family: FuturaBookC, serif;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+    
+     
+}
+
+.description {
+    width: 50%;
+    margin-left: 3.5%;
+    display: flex;
+    flex-direction: column;
+
+    &__intro {
+        font-family: FuturaDemiC, serif;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+    }
+
+    &__main-header {
+        width: 30%;
+        margin-bottom: 10%;
+        font-family: Yeseva One, serif;
+        font-size: 2.7rem;
+        line-height: 3.7rem;
+        text-transform: uppercase;
+        color: #E3B873;
+
+        @media (max-width: 1260px) {
+            width: 174%;
+         }
+    }
+
+
+    &__vector {
+        position: absolute;
+        top: 12%;
+        left: 19%;
+
+        @media (max-width: 1260px) {
+            display: none;
+         }
+    }
+
+    &__count-steps {
+        margin-bottom: 3%;
+        font-family: Yeseva One, serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__header {
+        width: 34%;
+        margin-bottom: 2%;
+        font-family: Yeseva One, serif;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        text-transform: uppercase;
+        color: #E3B873;
+     }
+
+    &__text {
+        width: 52%;
+        margin-bottom: 15%;
+        font-family: FuturaBookC, serif;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 1260px) {
+        margin-top: 5%;
+     }
+}
+
+.slider {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    &__point {
+        opacity: 0.4;
+    }
+
+    &__arrow:hover {
+        cursor: pointer;
+        opacity: 0.4;
+   }
+
+   @media (max-width: 1260px) {
+    width: 36%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+ }
+}

@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100vw;
+    height: 10150px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+
+    @media (min-width: 1440px) {
+        width:  1440px;
+        height: 10150px;
+        margin: 0 auto;
+       
+    }
+
+    @media (max-width: 760px) {
+        width: 100vw;
+        height: 8796px;
+        margin: 0 auto;
+       
+    }
+
+    @media (max-width: 1360px) {
+        width: 100vw;
+        height: 8796px;
+        margin: 0 auto;
+       
+    }
+}
+
+ 

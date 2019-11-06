@@ -1,0 +1,285 @@
+.our-clients {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+
+    &__header {
+        height: max-content;
+        margin-bottom: 1%;
+        font-family: Yeseva One, serif;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+    }
+
+    &__icon {
+        height: 3%;
+        margin-bottom: 2%;
+  
+    }
+
+    &__description {
+        width: 32%;
+        height: 12%;
+        align-self: center;
+        font-family: FuturaBookC, serif;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: #363636;
+    }
+
+    &__container {
+        height: 50%;
+        margin-bottom: 4%;
+        display: flex;
+    }
+
+    @media (max-width: 1260px) {
+        height: 9%;
+     }
+
+    @media (max-width: 760px) {
+       display: none;
+    }
+}
+
+.client-1 {
+    width: 0%;
+    height: 105%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+   
+    &__container {
+        width: 100%;
+        display: flex;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__header {
+        width: 30%;
+        align-self: center;
+        margin-left: 3%;
+        font-family: Yeseva One, serif;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: #181818;
+    }
+
+    &__text {
+        width: 73%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        align-self: end;
+        font-family: FuturaBookC, serif;
+        font-size: 1.5rem;
+        line-height: 180%;
+        color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
+
+    }
+
+    &__description {
+        width: 70%;
+        height: 12%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: end;
+        font-family: Yeseva One, serif;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        color: #FFFFFF;
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        border: 0;
+
+
+        &_left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-right: 1px solid #FFFFFF;
+        }
+
+        &_right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+  
+}
+
+.client-2 {
+    width: 0%;
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+   
+    &__container {
+        width: 100%;
+        display: flex;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__header {
+        width: 30%;
+        align-self: center;
+        margin-left: 3%;
+        font-family: Yeseva One, serif;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: #181818;
+    }
+
+    &__text {
+        width: 73%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        align-self: end;
+        font-family: FuturaBookC, serif;
+        font-size: 1.5rem;
+        line-height: 180%;
+        color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
+
+    }
+
+    &__description {
+        width: 70%;
+        height: 12%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: end;
+        font-family: Yeseva One, serif;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        color: #FFFFFF;
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        border: 0;
+
+
+        &_left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-right: 1px solid #FFFFFF;
+        }
+
+        &_right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+
+.client-3 {
+    width: 0%;
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+   
+    &__container {
+        width: 100%;
+        display: flex;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__header {
+        width: 30%;
+        align-self: center;
+        margin-left: 3%;
+        font-family: Yeseva One, serif;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: #181818;
+    }
+
+    &__text {
+        width: 73%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        align-self: end;
+        font-family: FuturaBookC, serif;
+        font-size: 1.5rem;
+        line-height: 180%;
+        color: #959595;
+
+        @media (max-width: 1260px) {
+            line-height: 2.1rem;
+         }
+
+    }
+
+    &__description {
+        width: 70%;
+        height: 12%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: end;
+        font-family: Yeseva One;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        color: #FFFFFF;
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        border: 0;
+
+
+        &_left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-right: 1px solid #FFFFFF;
+        }
+
+        &_right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}

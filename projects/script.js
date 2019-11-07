@@ -1,13 +1,13 @@
 
 
-document.querySelector('.education-button').addEventListener('click', function() {
+document.querySelector('.education__button').addEventListener('click', function() {
 
 	if (document.querySelector('.education__items').style.opacity === '0') {
 		document.querySelector('.education__items').style.opacity = '1';
-		document.querySelector('.education-button').style.transform = 'rotate(180deg)';
+		document.querySelector('.education__button').style.transform = 'rotate(0deg)';
 	} else {
 		document.querySelector('.education__items').style.opacity ='0';
-		document.querySelector('.education-button').style.transform = 'rotate(0deg)';
+		document.querySelector('.education__button').style.transform = 'rotate(180deg)';
 	}
 	});
 
@@ -15,6 +15,7 @@ document.querySelector('.project-image-theyalow').addEventListener('click', func
 
 	document.querySelector('.iframe-theyalow').style.display = 'block';
 	document.querySelector('.info').style.display = 'none';
+	document.querySelector('.projects').style.display = 'none';
 	document.querySelector('.carousel').style.display = 'none';
 	document.querySelector('.button-back').style.display = 'block';
 	document.querySelector('.button-mobile-theyalow').style.display = 'block';
@@ -26,6 +27,7 @@ document.querySelector('.button-back').addEventListener('click', function() {
 	document.querySelector('.iframe-theyalow').style.display = 'none';
 	document.querySelector('.info').style.display = 'flex';
 	document.querySelector('.carousel').style.display = 'block';
+	document.querySelector('.projects').style.display = 'block';
 	document.querySelector('.button-back').style.display = 'none';
 	document.querySelector('.button-mobile-theyalow').style.display = 'none';
 	
@@ -53,6 +55,7 @@ document.querySelector('.project-image-design').addEventListener('click', functi
 
 	document.querySelector('.iframe-design').style.display = 'block';
 	document.querySelector('.info').style.display = 'none';
+	document.querySelector('.projects').style.display = 'none';
 	document.querySelector('.carousel').style.display = 'none';
 	document.querySelector('.button-back').style.display = 'block';
 	document.querySelector('.button-mobile-design').style.display = 'block';
@@ -64,6 +67,7 @@ document.querySelector('.button-back').addEventListener('click', function() {
 	document.querySelector('.iframe-design').style.display = 'none';
 	document.querySelector('.info').style.display = 'flex';
 	document.querySelector('.carousel').style.display = 'block';
+	document.querySelector('.projects').style.display = 'block';
 	document.querySelector('.button-back').style.display = 'none';
 	document.querySelector('.button-mobile-design').style.display = 'none';
 	
@@ -80,6 +84,44 @@ document.querySelector('.button-mobile-design').addEventListener('click', functi
 		document.querySelector('.iframe-design').style.width = '1440px';
 		document.querySelector('.iframe-design').style.height = '1848px';
 		document.querySelector('.button-mobile-theyalow').value = 'Mobile';
+	
+	}
+	
+
+});
+
+document.querySelector('.btn-show-desc-theyalow').addEventListener('touchstart', function() {
+
+	if(document.querySelector('.project-image-theyalow').style.opacity === '1') {
+		document.querySelector('.project-image-theyalow').style.opacity = '0';
+		document.querySelector('.project-name-theyalow').style.display = 'block';
+		document.querySelector('.project-name-theyalow').classList.add('show-desc');
+		document.querySelector('.btn-show-desc-theyalow').value = 'hide description';
+	
+	} else  {
+		document.querySelector('.project-image-theyalow').style.opacity = '1';
+		document.querySelector('.project-name-theyalow').style.display = 'none';
+		document.querySelector('.project-name-theyalow').classList.remove('show-desc');
+		document.querySelector('.btn-show-desc-theyalow').value= 'show description';
+	
+	}
+	
+
+});
+
+document.querySelector('.btn-show-desc-design').addEventListener('touchstart', function() {
+
+	if(document.querySelector('.project-image-design').style.opacity === '1') {
+		document.querySelector('.project-image-design').style.opacity = '0';
+		document.querySelector('.project-name-design').style.display = 'block';
+		document.querySelector('.project-name-design').classList.add('show-desc');
+		document.querySelector('.btn-show-desc-design').value = 'hide description';
+	
+	} else  {
+		document.querySelector('.project-image-design').style.opacity = '1';
+		document.querySelector('.project-name-design').style.display = 'none';
+		document.querySelector('.project-name-design').classList.remove('show-desc');
+		document.querySelector('.btn-show-desc-design').value= 'show description';
 	
 	}
 	

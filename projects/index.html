@@ -11,77 +11,78 @@
 </head>
 
 <body>
-  <div class="info">
-    <div class="contacts">
-      <img src="./assets/img/me.JPG" alt="Here I am" width="582" height="756" />
-      <h3>Contacts</h3>
-      <p><i class="	fa fa-mobile-phone"></i> +375(44)531-68-32</p>
-      <p><i class="	fa fa-envelope"></i>vitek230290@gmail.com</p>
-      <p><i class="fa fa-github"></i> viktorsipach</p>
-      <p><i class="fa fa-telegram"></i> viktorsipach</p>
-    </div>
-    <div class="main-info">
-      <div>
-        <h1>Viktor Sipach</h1>
-        <h2>Web Developer</h2>
-        <p>Get as mach experience to maximize my skills and development</p>
-      </div>
+  <div class="wrapper">
+    <div class="info">
+      <img src="./assets/img/me.JPG" alt="Here I am" class="foto" />
       <div class="education">
-        <h2>Education <img src="./assets/img/scroll_down.svg" alt="button" class="education-button"></h2>
-        <div class="education__items">
-          <div>
-            <h3>School</h3>
-            <p>1997-2007</p>
+        <h2>Education</h2>
+        <div class="education__button">^</div>
+        <ul class="education__items">
+          <li>School<br>1997-2007</li>
+          <li>Belarusian National Polytechnic College<br>2007-2011</li>
+          <li>Belarusian National Technical University<br>2011-2017</li>
+          <li>RSSchool Courses<br>2019-2020</li>
+        </ul>
+      </div>
+      <div class="main-info">
+        <h1>Viktor Sipach</h1>
+        <h2><a href="https://github.com/viktorsipach">GitHub</a></h2>
+        <p>vitek230290@gmail.com</p>
+      </div>
+    </div>
+    <h2 class="projects">Projects</h2>
+    <div class="carousel">
+      <div class="items-container">
+        <div class="item active">
+          <div class="description">
+            <div class="project-name-theyalow">
+              <h3>theyalow</h3>
+              <ul class="project-desc">
+                <li>Photoshop</li>
+                <li>Photopea</li>
+                <li>Psdetch</li>
+                <li>Prefect Pixel</li>
+              </ul>
+            </div>
+            <input type="button" value="show description" class="btn-show-desc-theyalow">
+            <div class="project-tap">Click on image to see the project &gt;</div>
+            <img class="project-image-theyalow" src="./assets/img/THEYALOW Desktop.jpg" alt="project">
           </div>
-          <div>
-            <h3>College</h3>
-            <p>2007-2011</p>
-          </div>
-          <div>
-            <h3>University</h3>
-            <p>2011-2017</p>
-          </div>
-          <div>
-            <h3>RSSchool Courses</h3>
-            <p>2019-2020</p>
+        </div>
+        <div class="item">
+          <div class="description">
+            <div class="project-name-design">
+              <h3>repair-design-projects</h3>
+              <ul class="project-desc">
+                <li>Responsive</li>
+                <li>Svg</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <input type="button" value="show description" class="btn-show-desc-design">
+            <div class="project-tap">Click on image to see the project &gt;</div>
+            <img class="project-image-design" src="./assets/img/HOME2.png" alt="project">
           </div>
         </div>
       </div>
+      <div class="control left">
+        <div class="arrow left">&lt;</div>
+      </div>
+      <div class="control right">
+        <div class="arrow right">&gt;</div>
+      </div>
     </div>
+    <p class="swipe-info">swipe to see other</p>
+    <button class="button-back" valume="Back">Back</button>
+    <input type="button" value="Mobile" class="button-mobile-theyalow">
+    <input type="button" value="Mobile" class="button-mobile-design">
+    <iframe src="./repair-design-projects/index.html" target="_blank" frameborder="0" seamless scrolling="no"
+      name="design" width="1340px" height="2000px" class="iframe-design">
+    </iframe>
+    <iframe src="./theyalow/index.html" target="_blank" frameborder="0" seamless scrolling="no" name="theyalow"
+      width="1440px" height="1848px" class="iframe-theyalow">
+    </iframe>
   </div>
-  <div class="carousel">
-    <div class="items-container">
-      <div class="item active">
-        <div class="description">
-          <div class="project-name">theyalow</div>
-          <div>Click on image to see the project</div>
-          <img class="project-image-theyalow" src="./assets/img/THEYALOW Desktop.jpg" alt="project">
-        </div>
-      </div>
-      <div class="item">
-        <div class="description">
-          <div class="project-name">repair-design-projects</div>
-          <div>Click on image to see the project</div>
-          <img class="project-image-design" src="./assets/img/HOME2.png" alt="project">
-        </div>
-      </div>
-    </div>
-    <div class="control left">
-      <div class="arrow left">&lt;</div>
-    </div>
-    <div class="control right">
-      <div class="arrow right">&gt;</div>
-    </div>
-  </div>
-  <button class="button-back" valume="Back">Back</button>
-  <input type="button" value="Mobile" class="button-mobile-theyalow">
-  <input type="button" value="Mobile" class="button-mobile-design">
-  <iframe src="./theyalow/index.html" target="_blank" frameborder="0" seamless scrolling="no" name="theyalow"
-    width="1440px" height="1848px" class="iframe-theyalow">
-  </iframe>
-  <iframe src="./repair-design-projects/index.html" target="_blank" frameborder="0" seamless scrolling="no"
-    name="design" width="1340px" height="2000px" class="iframe-design">
-  </iframe>
   <script src="./script.js" type="text/javascript"></script>
 </body>
 

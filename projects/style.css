@@ -1,20 +1,108 @@
-
-.info {
-  display: flex;
-  justify-content: space-around;
+body {
+  background: azure;
 }
 
-.contacts img {
-  width: 50%;
+.info {
+  width: 100%;
   height: 50%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.foto {
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.education {
+  width: 30%;
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.education li {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  margin: 2%;
+}
+
+.education__items {
+  opacity: 0;
+}
+
+.education__button {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  font-size: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.main-info {
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.main-info h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+
+.main-info h2 {
+  margin-top: 8%;
+  margin-bottom: 6%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.main-info p {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.main-info h2 a {
+  text-decoration: underline;
+  color: black;
+}
+
+.projects {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
 }
 
 .button-back {
+  width: 7%;
+  height: 6%;
+  border-radius: 10px;
+  border: 2px solid;
   display: none;
   position: fixed;
   top: 80%;
   left: 90%;
+  user-select: none;
 }
 
 .button-back:hover {
@@ -22,18 +110,33 @@
 }
 
 .button-mobile-theyalow {
+  width: 7%;
+  height: 6%;
+  border-radius: 10px;
+  border: 2px solid;
   display: none;
   position: fixed;
   top: 90%;
   left: 90%;
+  user-select: none;
 }
 
 .button-mobile-theyalow:hover {
   cursor: pointer;
 }
+
+.project-image-theyalow {
+  opacity: 1;
+}
+
+.project-image-design {
+  opacity: 1;
+}
+
 .project-image-theyalow:hover {
   cursor: pointer;
 }
+
 .iframe-theyalow {
   display: none;
   margin: auto;
@@ -45,24 +148,35 @@
 }
 
 .button-mobile-design {
+  width: 7%;
+  height: 6%;
+  border-radius: 10px;
+  border: 2px solid;
   display: none;
   position: fixed;
   top: 90%;
   left: 90%;
+  user-select: none;
 }
 
 .button-mobile-design:hover {
   cursor: pointer;
 }
 
-.education__items {
-  opacity: 0;
+.btn-show-desc-theyalow {
+  display: none;
 }
 
-.education-button {
-  margin-left: 3%;
-  cursor: pointer;
-  transform: rotate(0deg);
+.btn-show-desc-design {
+  display: none;
+}
+
+.swipe-info {
+  display: none;
+}
+
+.show-desc {
+  position: absolute;
 }
 
 .carousel {
@@ -87,8 +201,7 @@
   margin: 0 auto;
 }
 
-.active,
-.next {
+.active, .next {
   display: block;
 }
 
@@ -106,8 +219,32 @@
   justify-content: space-between;
 }
 
-.project-name {
-  padding: 10px;
+.project-name-theyalow {
+  margin-left: 12%;
+  margin-top: 10%;
+}
+
+.project-name-design {
+  margin-top: 10%;
+  margin-left: 6%;
+}
+
+.project-desc {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 15%;
+}
+
+.project-tap {
+  position: absolute;
+  border: 2px solid;
+  width: 22%;
+  top: 70%;
+  left: 24%;
+  height: max-content;
 }
 
 .control {
@@ -181,27 +318,94 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media (max-width: 640px) {
-  .control > .arrow {
-    display: none;
-  }
-
-  .project-name {
-    display: none;
-  }
-
   .description {
     border: 0;
   }
-
-  .iframe {
-    width: 640px;
-  }
-  
-  .button-mobile {
+  .project-tap {
     display: none;
   }
-  
+  .education p {
+    left: 70%;
+  }
+}
+
+@media (max-width: 640px) {
+  .control>.arrow {
+    display: none;
+  }
+  .project-name-theyalow {
+    display: none;
+  }
+  .project-name-design {
+    display: none;
+  }
+  .foto {
+    top: 5%;
+    left: 25%;
+  }
+  .education {
+    left: 10%;
+    width: 45%;
+    top: 130%;
+  }
+  .education__button {
+    display: none;
+  }
+  .education__items {
+    opacity: 1;
+  }
+  .main-info {
+    width: 100%;
+    top: 80%;
+    left: 0%;
+  }
+  .main-info h2 {
+    margin-bottom: 2%;
+    margin-top: 3%;
+  }
+  .projects {
+    left: 10%;
+    top: 100%;
+  }
+  .carousel {
+    top: 140%;
+  }
+  .project-image-theyalow {
+    margin-top: 3%;
+  }
+  .project-image-design {
+    margin-top: 3%;
+  }
+  .swipe-info {
+    display: block;
+    position: absolute;
+    top: 175%;
+    left: 28%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+  }
+  .btn-show-desc-theyalow {
+    display: block;
+    height: 7%;
+    top: -6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    left: 50%;
+    background: beige;
+    position: absolute;
+  }
+  .btn-show-desc-design {
+    display: block;
+    height: 7%;
+    top: -6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    left: 50%;
+    background: beige;
+    position: absolute;
+  }
 }

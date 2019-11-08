@@ -77,13 +77,13 @@ document.querySelector('.button-mobile-design').addEventListener('click', functi
 
 	if(document.querySelector('.iframe-design').style.width === '1440px') {
 		document.querySelector('.iframe-design').style.width = '375px';
-		document.querySelector('.iframe-design').style.height = '10600px';
+		document.querySelector('.iframe-design').style.height = '9000px';
 		document.querySelector('.button-mobile-design').value = 'Desktop';
 	
 	} else  {
 		document.querySelector('.iframe-design').style.width = '1440px';
-		document.querySelector('.iframe-design').style.height = '1848px';
-		document.querySelector('.button-mobile-theyalow').value = 'Mobile';
+		document.querySelector('.iframe-design').style.height = '10400px';
+		document.querySelector('.button-mobile-design').value = 'Mobile';
 	
 	}
 	

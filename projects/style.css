@@ -137,6 +137,10 @@ body {
   cursor: pointer;
 }
 
+.project-image-design:hover {
+  cursor: pointer;
+}
+
 .iframe-theyalow {
   display: none;
   margin: auto;

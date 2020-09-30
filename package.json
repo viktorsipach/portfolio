@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktorsipach/portfolio.git"
+  },
+  "keywords": [
+    "web",
+    "developer",
+    "portfolio"
+  ],
+  "author": "Viktar Sipach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viktorsipach/portfolio/issues"
+  },
+  "homepage": "https://github.com/viktorsipach/portfolio#readme",
+  "dependencies": {
+    "swiper": "^6.0.4",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1"
+  }
+}

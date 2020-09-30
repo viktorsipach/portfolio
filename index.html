@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/52a64ca834.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+
+      <div class="left__side">
+        <img class="img photo" src="./src/assets/me.JPG" alt="Viktor Sipach photo">
+
+        <div class='layout__2col'>
+
+          <div class="header-info">
+            <div>Viktar Sipach</div>
+            <div>
+              <i class="icon fas fa-at"></i>
+              vitek230290@gmail.com
+            </div>
+            <div>
+              <i class="fas fa-paper-plane"></i>
+              @viktorsipach
+            </div>
+            <div>
+              <i class="fas fa-mobile-alt"></i>
+              +375 44 531-68-32
+            </div>
+          </div>
+
+          <div class="links-to-sites">
+            <div>
+              <i class="fab fa-github"></i>
+              <a class="link" href="https://github.com/viktorsipach" target="_blank">
+                My github</a>
+            </div>
+            <div>
+              <i class="fas fa-search"></i>
+              <a class="link" href="https://jobs.tut.by/resume/9aa5a12eff07e29de50039ed1f313951534969" target="_blank">
+                My jobs.tut.by profile</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="certificates">
+        <img id="js" class="img certificate landscape" src="./src/assets/certificate1.jpg"
+          alt="RS school JS certificate">
+          <img id="js" class="img certificate landscape" src="./src/assets/certificate2.jpg"
+          alt="RS school JS certificate">
+      </div>
+
+    </div>
+
+    <div class="certificate__modal hidden">
+      <img class="modal__image" src="./src/assets/certificate1.jpg" alt="">
+    </div>
+    <div class="close-btn hidden"></div>
+
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="container">
+
+        <!--RS lang-->
+        <div class="card">
+          <a href="https://rslang-team64-viktorsipach.netlify.app/" target="_blank">
+            <h4 class="card__title">RS lang</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang1.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang2.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang3.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang4.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang5.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang6.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang7.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang8.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang9.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang10.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang11.png" alt="RS lang image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/rslang12.png" alt="RS lang image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <h6>Team project</h6>
+          <p class="card__description">
+            RS lang - app for learning words with interval repetition technique, individual
+            progress tracking and mini-games.
+            Application use API with ability to create new users, users can have learning words, setting and statistics
+            data.
+          </p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://rslang-team64-viktorsipach.netlify.app/" target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src" href="https://github.com/viktorsipach/rslang" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--Songbird-->
+        <div class="card">
+          <a href="https://viktorsipach.github.io/songbird/" target="_blank">
+            <h4 class="card__title">Songbird</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/songbird1.jpg" alt="Songbird image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/songbird2.jpg" alt="Songbird image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/songbird3.jpg" alt="Songbird image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <h6>React app</h6>
+          <p class="card__description">
+            Songbird - single page application. Quiz to recognize birds and insects by their voices.
+          </p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach.github.io/songbird/" target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src" href="https://github.com/viktorsipach/songbird" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--Movie search-->
+        <div class="card">
+          <a href="https://viktorsipach-movie-search.netlify.app/" target="_blank">
+            <h4 class="card__title">Movie search</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/movieSearch1.jpg" alt="Movie search image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/movieSearch2.jpg" alt="Movie search image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/movieSearch3.jpg" alt="Movie search image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <p class="card__description">Movie search - single page application that displays movie information by user
+            request. OMDb RESTful API is used to obtain information.
+          </p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach-movie-search.netlify.app/" target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src"
+              href="https://github.com/viktorsipach/movie-search" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--Fancy weather-->
+        <div class="card">
+          <a href="https://viktorsipach-fancy-weather.netlify.app/" target="_blank">
+            <h4 class="card__title">Fancy weather</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/fancyWeather1.jpg" alt="Fancy weather image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/fancyWeather2.jpg" alt="Fancy weather image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/fancyWeather3.jpg" alt="Fancy weather image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/fancyWeather4.jpg" alt="Fancy weather image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <p class="card__description">Fancy weather - application for getting weather forecast. Various APIs are used
+            to obtain data. The app can be used in 3 languages English, Russian and Belarusian.
+          </p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach-fancy-weather.netlify.app/"
+              target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src"
+              href="https://github.com/viktorsipach/fancy-weather" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--English for kids-->
+        <div class="card">
+          <a href="https://viktorsipach-english-for-kids.netlify.app/" target="_blank">
+            <h4 class="card__title">English for kids</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/englishForKids1.jpg" alt="English for kids image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/englishForKids2.jpg" alt="English for kids image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/englishForKids3.jpg" alt="English for kids image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <p class="card__description">English for kids - web application for studying English. All words
+            divided into 8 categories. App has two modes: training - to learn new words, game - to play a game with
+            learned words.
+          </p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach-english-for-kids.netlify.app/"
+              target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src"
+              href="https://github.com/viktorsipach/english-for-kids" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--Singolo-->
+        <div class="card">
+          <a href="https://viktorsipach.github.io/singolo/" target="_blank">
+            <h4 class="card__title">Singolo</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/singolo1.png" alt="Singolo image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/singolo2.png" alt="Singolo image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/singolo3.png" alt="Singolo image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/singolo4.png" alt="Singolo image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/singolo5.png" alt="Singolo image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <p class="card__description">Pixel perfect layout and styling based on PSD model. Responsive layout (SASS).DOM
+            actions (JS basics).</p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach.github.io/singolo/" target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src" href="https://github.com/viktorsipach/singolo" target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+
+        <!--Repair design project-->
+        <div class="card">
+          <a href="https://viktorsipach-repair-design-project.netlify.app/" target="_blank">
+            <h4 class="card__title">Repair design project</h4>
+          </a>
+          <div id="swiper-container" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/repair1.jpg" alt="Repair image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/repair2.jpg" alt="Repair image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/repair3.jpg" alt="Repair image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/repair4.jpg" alt="Repair image">
+              </div>
+              <div class="swiper-slide">
+                <img class="card__image" src="./src/assets/repair5.jpg" alt="Repair image">
+              </div>
+            </div>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div>
+          </div>
+          <p class="card__description">Landing page "Repair design project". Responsive layout and styling based on Figma
+            model for fixed screen resolutions: 1440px, 768px, 375px.</p>
+          <div class="card__demo">
+            <i class="icon fas fa-desktop"></i>
+            <a class="card__link-to-demo" href="https://viktorsipach-repair-design-project.netlify.app/"
+              target="_blank">
+              Link to deploy</a>
+          </div>
+          <div class="card__source">
+            <i class="fab fa-github"></i>
+            <a class="card__link-to-src" href="https://github.com/viktorsipach/repair-design-project"
+              target="_blank">
+              Link to source code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

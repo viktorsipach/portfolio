@@ -19,6 +19,7 @@ header {
   }
   @media(max-width: 768px) { 
     height: 17.5rem;
+    background-color: #ffffff;
   }
 }
 
@@ -61,8 +62,10 @@ header {
   box-shadow: 0 0 20px rgba(233,127,228,.904);
   &.photo {
     margin-right: 2rem;
+    margin-left: 2rem;
     @media(max-width: 1200px) { 
-      margin-right: 1rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
     }
   }
 }
@@ -102,6 +105,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   @media(max-width: 768px) { 
+    flex-wrap: wrap;
     margin-top: 1rem;
   }
 }
@@ -114,6 +118,9 @@ header {
   &.landscape {
     width: 7.5rem;
     height: 5rem;
+    @media(max-width: 768px) { 
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -123,6 +130,7 @@ header {
   margin: 0 auto;
   @media(max-width: 768px) { 
     width: 90%;
+    margin-top: 4rem;
   }
 }
 
